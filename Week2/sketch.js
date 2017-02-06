@@ -7,7 +7,7 @@ function setup(){
 
 function draw(){
   
-  if (mousePressed) {
+  if (mouseIsPressed) {
      for( var y = 0; y < height; y=y+200) {
        for( var r= 500; r > 0; r-= 50 ) {
          stroke(random(255),random(255),random(255));
