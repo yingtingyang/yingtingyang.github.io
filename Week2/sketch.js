@@ -7,7 +7,7 @@ function setup(){
 
 function draw(){
   
-  if (touchStarted) {
+  if (mousePressed) {
      for( var y = 0; y < height; y=y+200) {
        for( var r= 500; r > 0; r-= 50 ) {
          stroke(random(255),random(255),random(255));
