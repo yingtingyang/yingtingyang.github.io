@@ -15,8 +15,8 @@ function draw(){
        }
      }
    } else {
-      for( int y = 0; y < height; y=y+200){
-         for( int r= 500; r > 0; r-= 50 ){
+      for( var y = 0; y < height; y=y+200){
+         for( var r= 500; r > 0; r-= 50 ){
              stroke(0);
              strokeWeight(random(5,50));
              fill(255);
