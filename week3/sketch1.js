@@ -4,6 +4,21 @@
 Star[] poopStarArray;
 
 function setup(){
+  rSlider = createSlider(0, 255, 100);
+  rSlider.position(20, 20);
+  gSlider = createSlider(0, 255, 0);
+  gSlider.position(20, 50);
+  bSlider = createSlider(0, 255, 255);
+  bSlider.position(20, 80);
+  var r = rSlider.value();
+  var g = gSlider.value();
+  var b = bSlider.value();
+  background(r, g, b);
+  text("red", 165, 35);
+  text("green", 165, 65);
+  text("blue", 165, 95);
+  //call back is a function when somthing is finished
+
    createCanvas(800,800);
    //background(0);
    noStroke();
@@ -17,19 +32,7 @@ function setup(){
         poopStarArray[i] = new Star(random(width), random(height), random(4), color(random(255),0, random(255)));
     }
   
-    rSlider = createSlider(0, 255, 100);
-  rSlider.position(20, 20);
-  gSlider = createSlider(0, 255, 0);
-  gSlider.position(20, 50);
-  bSlider = createSlider(0, 255, 255);
-  bSlider.position(20, 80);
-   var r = rSlider.value();
-  var g = gSlider.value();
-  var b = bSlider.value();
-  background(r, g, b);
-  text("red", 165, 35);
-  text("green", 165, 65);
-  text("blue", 165, 95);
+
 
 }
 
