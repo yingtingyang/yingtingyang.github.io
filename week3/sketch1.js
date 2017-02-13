@@ -16,15 +16,16 @@ function setup(){
         
         poopStarArray[i] = new Star(random(width), random(height), random(4), color(random(255),0, random(255)));
     }
+  
+}
+
+void draw(){
   rSlider = createSlider(0, 255, 100);
   rSlider.position(20, 20);
   gSlider = createSlider(0, 255, 0);
   gSlider.position(20, 50);
   bSlider = createSlider(0, 255, 255);
   bSlider.position(20, 80);
-}
-
-void draw(){
    var r = rSlider.value();
   var g = gSlider.value();
   var b = bSlider.value();
@@ -32,7 +33,7 @@ void draw(){
   text("red", 165, 35);
   text("green", 165, 65);
   text("blue", 165, 95);
-  
+
   for ( int i= 0; i< 250; i++){
     poopStarArray[i].colorize();
     poopStarArray[i].display();
