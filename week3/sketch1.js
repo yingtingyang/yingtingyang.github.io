@@ -1,5 +1,4 @@
-//Star poop;
-//Star poop2;
+
 
  var rSlider, gSlider, bSlider;
 
@@ -27,16 +26,8 @@ function draw() {
   text("green", 165, 65);
   text("blue", 165, 95);
 
-  if (mouseIsPressed) {
-     for( var y = 0; y < height; y=y+200) {
-       for( var r= 500; r > 0; r-= 50 ) {
-         stroke(random(255),random(255),random(255));
-         strokeWeight(random(5,50));
-         fill(random(100,255));
-         ellipse(250,250,r,r);
-       }
-     }
-   } else {
+ 
+   
       for( var y = 0; y < height; y=y+200){
          for( var r= 500; r > 0; r-= 50 ){
              stroke(0);
@@ -45,5 +36,5 @@ function draw() {
              ellipse(250,250,r,r);
              }
          }
-      }
+   
 }
