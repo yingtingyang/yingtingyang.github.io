@@ -4,7 +4,26 @@
  var poopStarArray[];
 
 function setup(){
-  rSlider = createSlider(0, 255, 100);
+  
+createCanvas(800,800);
+   //background(0);
+   noStroke();
+   poopStarArray = new Star[250];
+   
+   //poop = new Star(width/2, height/2, 2, color(50,150,200));
+   //poop = new Star(width/2, height/2, 3, color(150,50,250));
+   
+    for( var i = 0; i < 250; i++){
+        
+        poopStarArray[i] = new Star(random(width), random(height), random(4), color(random(255),0, random(255)));
+    }
+  
+
+}
+
+function sliders(){
+
+    rSlider = createSlider(0, 255, 100);
   rSlider.position(20, 20);
   gSlider = createSlider(0, 255, 0);
   gSlider.position(20, 50);
@@ -19,26 +38,11 @@ function setup(){
   text("blue", 165, 95);
   //call back is a function when somthing is finished
 
-  
 
 }
+function draw(){
 
-void draw(){
-
-   createCanvas(800,800);
-   //background(0);
-   noStroke();
-   poopStarArray = new Star[250];
    
-   //poop = new Star(width/2, height/2, 2, color(50,150,200));
-   //poop = new Star(width/2, height/2, 3, color(150,50,250));
-   
-    for( var i = 0; i < 250; i++){
-        
-        poopStarArray[i] = new Star(random(width), random(height), random(4), color(random(255),0, random(255)));
-    }
-  
-
 
   for ( int i= 0; i< 250; i++){
     poopStarArray[i].colorize();
