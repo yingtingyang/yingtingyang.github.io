@@ -4,7 +4,7 @@
 
 function setup() {
   // create canvas
-  createCanvas(500, 500);
+  createCanvas(600, 600);
   textSize(15)
   noStroke();
 
@@ -25,7 +25,14 @@ function draw() {
   text("red", 165, 35);
   text("green", 165, 65);
   text("blue", 165, 95);
-
+  
+  for( var y = 0; y < height; y=y+200){
+         for( var r= 500; r > 0; r-= 50 ){
+             stroke(0);
+             strokeWeight(random(5,50));
+             fill(255);
+             ellipse(250,250,r,r);
+             }
  
    
      
