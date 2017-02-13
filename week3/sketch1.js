@@ -22,9 +22,7 @@ function draw() {
   var g = gSlider.value();
   var b = bSlider.value();
   background(r, g, b);
-  text("red", 165, 35);
-  text("green", 165, 65);
-  text("blue", 165, 95);
+ 
   
   for( var y = 0; y < height; y=y+200){
          for( var r= 500; r > 0; r-= 50 ){
