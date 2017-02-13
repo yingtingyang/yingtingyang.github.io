@@ -32,7 +32,5 @@ function draw() {
              ellipse(250,250,r,r);
              }
  
-   
-     
-   
-}
+   }
+ }
