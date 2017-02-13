@@ -4,7 +4,7 @@
 
 function setup() {
   // create canvas
-  createCanvas(710, 400);
+  createCanvas(500, 500);
   textSize(15)
   noStroke();
 
