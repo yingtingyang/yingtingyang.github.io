@@ -1,27 +1,55 @@
+//Star poop;
+//Star poop2;
+
+Star[] poopStarArray;
+
 function setup(){
-  createCanvas(500,500);
+   createCanvas(800,800);
+   //background(0);
+   noStroke();
+   poopStarArray = new Star[250];
+   
+   //poop = new Star(width/2, height/2, 2, color(50,150,200));
+   //poop = new Star(width/2, height/2, 3, color(150,50,250));
+   
+    for( var i = 0; i < 250; i++){
+        
+        poopStarArray[i] = new Star(random(width), random(height), random(4), color(random(255),0, random(255)));
+    }
 }
 
-function draw(){
+void draw(){
   background(0);
-  fill(255);
-  if (touchStarted) {
-     for( var y = 0; y < height; y=y+200) {
-       for( var r= 500; r > 0; r-= 50 ) {
-         stroke(random(255),random(255),random(255));
-         strokeWeight(random(5,50));
-         fill(random(100,255));
-         ellipse(250,250,r,r);
-       }
+  //poop.display();
+  //poop2.display();
+  for ( int i= 0; i< 250; i++){
+    poopStarArray[i].colorize();
+    poopStarArray[i].display();
+  
+  }
+}
+
+class Star{
+  //feilds
+ var x;
+ var y;
+ var radius;
+ color starColor;
+   Star(
+     var tempx, var tempy, var tempRad, color tempColor){
+     x = tempx;
+     y = tempy;
+     radius = tempRad;
+     starColor = tempColor;
+   }
+    function colorize(){
+      if (mouseIsPressed)
+     fill(starColor);
+     else{fill(255);
      }
-   } else {
-      for( int y = 0; y < height; y=y+200){
-         for( int r= 500; r > 0; r-= 50 ){
-             stroke(0);
-             strokeWeight(random(5,50));
-             fill(255);
-             ellipse(250,250,r,r);
-             }
-         }
-      }
-}}
+    }
+    function display(){
+   
+    ellipse(x, y, radius*2, radius*2);
+    }
+}
