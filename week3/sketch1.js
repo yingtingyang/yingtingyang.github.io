@@ -1,7 +1,7 @@
 //Star poop;
 //Star poop2;
 
-Star[] poopStarArray;
+ var poopStarArray[];
 
 function setup(){
   rSlider = createSlider(0, 255, 100);
@@ -19,6 +19,12 @@ function setup(){
   text("blue", 165, 95);
   //call back is a function when somthing is finished
 
+  
+
+}
+
+void draw(){
+
    createCanvas(800,800);
    //background(0);
    noStroke();
@@ -33,10 +39,6 @@ function setup(){
     }
   
 
-
-}
-
-void draw(){
 
   for ( int i= 0; i< 250; i++){
     poopStarArray[i].colorize();
