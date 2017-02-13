@@ -23,12 +23,12 @@ createCanvas(800,800);
 
 function sliders(){
 
-    rSlider = createSlider(0, 255, 100);
-  rSlider.position(20, 20);
-  gSlider = createSlider(0, 255, 0);
-  gSlider.position(20, 50);
-  bSlider = createSlider(0, 255, 255);
-  bSlider.position(20, 80);
+  var rSlider = createSlider(0, 255, 100);
+  var rSlider.position(20, 20);
+  var gSlider = createSlider(0, 255, 0);
+  var gSlider.position(20, 50);
+  var bSlider = createSlider(0, 255, 255);
+  var bSlider.position(20, 80);
   var r = rSlider.value();
   var g = gSlider.value();
   var b = bSlider.value();
