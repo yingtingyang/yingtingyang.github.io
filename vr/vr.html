@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Out</title>
-    <meta name="description" content="version 0.1">
+    <meta name="description" content="play-tech version">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
@@ -13,16 +12,23 @@
     <script src="components/set-image.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene fog="type: linear; color: #AAA">
       <a-assets>
-        <img id="city" crossorigin="anonymous" src="https://ucarecdn.com/1c58fd7f-e515-4dfb-9144-fb32e6fb1d3d/">
-        <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-        <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-        <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+        <img id="city" crossorigin="anonymous" src="https://ucarecdn.com/e28bf302-533a-4445-8975-a7b11b5d29eb/">
+        <img id="city-thumb" crossorigin="anonymous" src="https://ucarecdn.com/2e48715e-96e9-441a-9697-17849ba1b5b0/">
+        <img id="cubes-thumb" crossorigin="anonymous" src="https://ucarecdn.com/2e48715e-96e9-441a-9697-17849ba1b5b0/">
+        <img id="sechelt-thumb" crossorigin="anonymous" src="https://ucarecdn.com/2e48715e-96e9-441a-9697-17849ba1b5b0/">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="cubes" crossorigin="anonymous" src="https://ucarecdn.com/9d3e5303-50fd-4fce-a14c-2dd3a6e8dfb0/">
-        <img id="sechelt" crossorigin="anonymous" src="https://ucarecdn.com/0bd65d77-e16b-46a2-aefd-ca9712e2141a/">
+        <a-sound src="https://ucarecdn.com/640c62b5-8469-4adb-80e0-0cc7dbb99180/"
+                 autoplay="true"
+                 loop="true"
+                 position="0 0 0"></a-sound>
 
+        <img id="cubes" crossorigin="anonymous" src="https://ucarecdn.com/3a5697e4-b273-46b6-91fd-f9b52f34593e/">
+        <img id="sechelt" crossorigin="anonymous" src="https://ucarecdn.com/472d1e42-e760-47c0-b783-6fb88bbdc798/">
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+        
+        
         <!-- Image link template to be reused. -->
         <script id="link" type="text/html">
           <a-entity class="link"
@@ -36,12 +42,18 @@
             sound="on: click; src: #click-sound"></a-entity>
         </script>
       </a-assets>
+      
+    
+    
 
       <!-- 360-degree image. -->
+      
       <a-sky id="image-360" radius="10" src="#city"></a-sky>
-
+          
+     
+        
       <!-- Image links. -->
-      <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
+      <a-entity id="links" layout="type: line; margin: 5" position="-5 -1 -5">
         <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
@@ -52,7 +64,7 @@
         <a-cursor id="cursor"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
           animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
-          event-set__1="_event: mouseenter; color: springgreen"
+          event-set__1="_event: mouseenter; color: red"
           event-set__2="_event: mouseleave; color: black"
           fuse="true"
           raycaster="objects: .link"></a-cursor>
@@ -60,4 +72,3 @@
     </a-scene>
   </body>
 </html>
-\ No newline at end of file
