@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Out</title>
-    <meta name="description" content="play-tech version">
+    <title>Play-tech build web vr</title>
+    <meta name="description" content="360&deg; Image Gallery - A-Frame">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
@@ -15,8 +15,6 @@
     <a-scene fog="type: linear; color: #AAA">
       <a-assets>
         <img id="city" crossorigin="anonymous" src="https://ucarecdn.com/e28bf302-533a-4445-8975-a7b11b5d29eb/">
-        <img id="cubes" crossorigin="anonymous" src="https://ucarecdn.com/3a5697e4-b273-46b6-91fd-f9b52f34593e/">
-        <img id="sechelt" crossorigin="anonymous" src="https://ucarecdn.com/472d1e42-e760-47c0-b783-6fb88bbdc798/">
         <img id="city-thumb" crossorigin="anonymous" src="https://ucarecdn.com/2e48715e-96e9-441a-9697-17849ba1b5b0/">
         <img id="cubes-thumb" crossorigin="anonymous" src="https://ucarecdn.com/2e48715e-96e9-441a-9697-17849ba1b5b0/">
         <img id="sechelt-thumb" crossorigin="anonymous" src="https://ucarecdn.com/2e48715e-96e9-441a-9697-17849ba1b5b0/">
@@ -26,8 +24,9 @@
                  loop="true"
                  position="0 0 0"></a-sound>
 
-        
-        
+        <img id="cubes" crossorigin="anonymous" src="https://ucarecdn.com/3a5697e4-b273-46b6-91fd-f9b52f34593e/">
+        <img id="sechelt" crossorigin="anonymous" src="https://ucarecdn.com/472d1e42-e760-47c0-b783-6fb88bbdc798/">
+         
         
         
         <!-- Image link template to be reused. -->
@@ -51,7 +50,7 @@
       
       <a-sky id="image-360" radius="10" src="#city"></a-sky>
           
-     
+
         
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 5" position="-5 -1 -5">
