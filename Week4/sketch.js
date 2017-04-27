@@ -4,7 +4,7 @@ var savedText;
 
 function setup() {
   noCanvas();
-  textarea = createElement('textarea', 'Enter text here!');
+  textarea = createElement('textarea', 'Enter your paper here!');
   textarea.size(300,400);
   createElement('br');
   button = createButton('push to save');
@@ -21,18 +21,26 @@ function saveText() {
 
   // loop through the array, if the word found is 'I' or 'i', replace it with 'you', etc.
   for (var i = 0; i < textArr.length; i++) {
-    if (textArr[i] === "to" || textArr[i] === "in") {
-      textArr[i] = "yo";
+    if (textArr[i] === "I" || textArr[i] === "i") {
+      textArr[i] = "Nope";
+
     }
-    if (textArr[i] === "the" || textArr[i] === "of") {
-      textArr[i] = "ya";
+    if (textArr[i] === "My" || textArr[i] === "my") {
+      textArr[i] = "Nope";
     }
-    if (textArr[i] === "a" || textArr[i] === "A") {
-      textArr[i] = "yooo";
+    if (textArr[i] === "Our" || textArr[i] === "our") {
+      textArr[i] = "Nope";
+
     }
   }
 
   // join the array into a single string, separated by spaces
   var newString = join(textArr, ' ');
   createP("NEW TEXT: " + newString);
+
+}
+
+function hightlightNope(){
+	var nope = newString.search("Nope");
+	
 }
