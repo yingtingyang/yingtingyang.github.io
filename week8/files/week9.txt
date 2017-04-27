@@ -1,0 +1,13 @@
+Pretty straightforward stuff for this week. Since these details are coming late, I'll set the due date for next Thursday. I can have a look at your progress in class Monday or answer any questions.
+
+ 
+
+Go through the RiTa.js p5.js quickstart (Links to an external site.)Links to an external site., all the p5.js tutorials (Links to an external site.)Links to an external site. and examples (Links to an external site.)Links to an external site..
+Use the Markov generator to create your own markov chain from your own corpus of text. Since this is pretty much a copy and paste type exercise at the simplest, creativity is a factor in this one.
+ 
+
+Your assignment link on your github.io page for this week should calculate and then show the results of your markov chain.
+
+Also think about letting a user set some of their own parameters and re-running it.
+
+Post the link to that page on the canvas assignment submission.

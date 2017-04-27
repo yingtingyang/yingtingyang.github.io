@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TF-IDF</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="tfidf.js" type="text/javascript"></script>
+
+    <style>
+      body {
+        padding: 20px;
+      }
+      .file {
+        margin-top: 24px;
+        font-weight: bold;
+      }
+      .text {
+        border-style: solid;
+        border-width: 1px;
+        padding: 20px;
+      }
+      #drop_zone {
+        padding: 20px;
+        border-style: dotted;
+        width: 200px;
+        text-align: center;
+      }
+      #results{
+          color: green;
+          text-align: center;
+          font-size: 20;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+
+
+    <h1>TF-IDF</h1>
+
+    <p>Drag txt files into the dropbox to search keyword.</p>
+
+    <p>
+      <div id="drop_zone">drag files<br/>(need more than one)</div>
+    </p>
+
+    <p>
+      <ol id="list">
+
+      <ol>
+    </p>
+
+    <p id = "results">
+    <!--  I tried to use a processing to visulize the result but can't figure out how to do it without mess out the tf-idf -->
+
+
+    </p>
+
+  </body>
+</html>

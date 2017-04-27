@@ -1,0 +1,10 @@
+Topic:  Make an improvement on a word cloud. Let a user input text onto the page, and then use the page to visualize the body of text that was entered.
+
+How could you make a visual representation of word counts that conveys information more effectively, insightfully, or interestingly than a word cloud?
+To do this you would take your javascript object with all the word counts, loop through it, and create graphics using them as data.
+You could create a bar chart (boring but ok), or bubbles, or any other visual form you feel like. You could say textSize(concordance[word[i]]) to directly impact the size of text based on the word count for example.
+This is primarily an information design experiment to get you experimenting with the concordance.
+The example will get you started with the concordance itself. Its up to you to use the canvas (via p5.js for example) or other means to visualize it.
+Extra credit:
+
+use TF-IDF or Bayesian statistical analysis. Check out Dan Shiffman's implementation of TF-IDF, a lot of whose work informed this class topic:

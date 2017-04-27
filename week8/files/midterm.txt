@@ -1,0 +1,17 @@
+The midterm is due on March 27.
+
+The assignment is to create a Chrome extension that accomplishes the following:
+
+Transforms the experience of browsing a website or the internet generally via some critical or poetic intent.
+Think about the examples shown in class and included below. How do they, by transforming the experience of consuming media, or overtly transforming the media itself, comment on culture and society? Or alternatively, how do they create an aesthetic experience that illuminates some quality? You should aspire to this level of rhetoric in your project rather than making something purely functional - even something functional can have a deeper dimension of intent.
+Makes use of at least one regular expression in the searching, analysis, or replacing of text.
+You could use a regular expression to find all <a href links and turn them into something else. Or find instances of all words that match your criteria, then use the Chrome extension popup to display some graphic analysis using p5js.
+Part 1 (regex) details here: https://github.com/whoisbma/Code-2-SP17/tree/master/week5-regular_expressions (Links to an external site.)Links to an external site. 
+
+Part 2 (extensions) details here: https://github.com/whoisbma/Code-2-SP17/tree/master/week06-07-browser_extensions (Links to an external site.)Links to an external site. (Links to an external site.)Links to an external site. 
+
+Review all the Regex notes and give them a try in your code editor and in Javascript.
+Prototype the regex-related functionality of what your midterm will be and be prepared to discuss it in class.
+Get the basic Chrome extension example from class working. We'll be diving deeper into Chrome extensions next week. Load it into Chrome by going to Tools -> Extensions -> Check Developer Mode -> Load Unpacked Extension.
+Do the Daniel Shiffman tutorial to review.
+ 
