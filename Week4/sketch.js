@@ -19,7 +19,7 @@ function saveText() {
   var textArr = splitTokens(savedText, '.:;?! !@#$%^&*()+');
   var length = textArr.length;
 
-  // loop through the array, if the word found is 'I' or 'i', replace it with 'you', etc.
+  // say no to first person!.
   for (var i = 0; i < textArr.length; i++) {
     if (textArr[i] === "I" || textArr[i] === "i") {
       textArr[i] = "Nope";
