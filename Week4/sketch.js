@@ -40,7 +40,7 @@ function saveText() {
 
 }
 
-function hightlightNope(){
-	var nope = newString.search("Nope");
+// function hightlightNope(){
+// 	var nope = newString.search("Nope");
 	
-}
+// }
